@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Doctor Appointment Booking</h1>
+        </header>
+        <section class="booking-section">
+            <h2>Book an Appointment</h2>
+            <form id="booking-form">
+                <label for="patient-name">Patient Name:</label>
+                <input type="text" id="patient-name" required>
+                <label for="doctor-select">Select a Doctor:</label>
+                <select id="doctor-select" required>
+                    <!-- dynamically generated doctor options -->
+                </select>
+                <label for="appointment-date">Appointment Date:</label>
+                <input type="date" id="appointment-date" required>
+                <label for="appointment-time">Appointment Time:</label>
+                <select id="appointment-time" required>
+                    <!-- dynamically generated time slot options -->
+                </select>
+                <button id="book-appointment">Book Appointment</button>
+            </form>
+        </section>
+        <section class="cancellation-section">
+            <h2>Cancel an Appointment</h2>
+            <form id="cancellation-form">
+                <label for="appointment-id">Appointment ID:</label>
+                <input type="text" id="appointment-id" required>
+                <button id="cancel-appointment">Cancel Appointment</button>
+            </form>
+        </section>
+        <section class="viewing-section">
+            <h2>View Appointments</h2>
+            <button id="view-appointments">View All Appointments</button>
+            <div id="appointment-list">
+                <!-- dynamically generated appointment list -->
+            </div>
+        </section>
+        <section class="doctors-section">
+            
+            <div id="doctor-list">
+                <!-- dynamically generated doctor cards -->
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
